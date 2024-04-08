@@ -1,0 +1,179 @@
+/* FILEPATH: /Users/szewahleong/Desktop/Szewah_Communications/style.css */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    transition: background-color 0.5s ease;
+}
+
+
+.box {
+    width: 80vw;
+    height: 30%;
+    background-color: #3498db;
+    position: absolute;
+    animation: moveBox 2s infinite alternate;
+}
+
+
+.box2 {
+    width: 80vw;
+    height: 30%;
+    background-color: #db347c00;
+    bottom: 10px;
+    animation: moveBox 2s infinite alternate;
+}
+
+
+
+@keyframes moveBox {
+    to {
+        transform: translateX(200px);
+    }
+}
+
+
+
+.section {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5;
+}
+
+
+#introduction{
+    width: 100vw;
+    background-color: #add8e6;
+}
+
+#header {
+    padding-top: 100px;
+    width: 80%;
+    margin: auto;
+}
+
+#commmunications {
+    width: 100vw;
+    margin: auto;
+}
+
+#commmunications > p {
+    width: 80%;
+    margin: auto;
+}
+
+#approach > p{
+    margin: auto;
+    width: 80%;
+}
+
+#getInTouch > p {
+    margin: auto;
+    width: 80%;
+}
+
+
+#audio {
+    height: 2px;
+}
+
+a {
+    text-decoration: none;
+    -webkit-text-fill-color: black;
+
+}
+
+
+/* Media queries for different device sizes */
+
+/* Small devices (up to 576px) */
+@media (max-width: 576px) {
+    /* CSS rules for small devices */
+
+    #commmunications > p {
+        width: 75%;
+    }
+
+    #approach > p{
+        width: 75%;
+    }
+    #getInTouch > p {
+        width: 75%;
+    }
+    
+
+
+
+}
+
+/* Medium devices (between 576px and 768px) */
+@media (min-width: 576px) and (max-width: 768px) {
+    /* CSS rules for medium devices */
+    body {
+        font-size: 16px;
+    }
+    #commmunications > p {
+        width: 80%;
+    }
+    #approach > p{
+        width: 80%;
+
+    }
+    #getInTouch > p {
+        width: 80%;
+
+    }
+
+
+}
+
+/* Large devices (between 768px and 992px) */
+@media (min-width: 768px) and (max-width: 992px) {
+    /* CSS rules for large devices */
+    body {
+        font-size: 20px;
+    }
+
+    #commmunications > p {
+        width: 65%;
+    }
+
+    #approach > p{
+        width: 65%;
+
+    }
+    #getInTouch > p {
+        width: 65%;
+
+    }
+
+}
+
+/* Extra large devices (above 992px) */
+@media (min-width: 992px) {
+    /* CSS rules for extra large devices */
+    body {
+        font-size: 25px;
+    }
+
+    #commmunications > p {
+        width: 50%;
+    }
+
+    #approach > p{
+        width: 50%;
+    }
+    #getInTouch > p {
+        width: 50%;
+    }
+
+}
