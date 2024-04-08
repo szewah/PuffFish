@@ -9,67 +9,64 @@
 <body>
 
 
-  <div class="box"></div>
-  <!-- <div class="box2"></div> -->
-
   <div class="section" id="introduction">
-
-    <div class="square-container"></div>
-
-
     <div id="header">
-      <h1>Puff Fish: Internal: Communications</h1>
-      <h3>Stratgy, Content, Advisor</h3>
+      <h1>Puff Fish</h1>
+      <h3>Oral Histories for Family Legacy</h3>
     </div>
 
 </div>
 
-  <div class="section" id="commmunications">
+  <div class="section" id="communications">
 
-    <p>Communications is a science that draws on political studies, anthropology, sociology and psychology. 
-    At best it provides clarity, becoming the "connective tissue" that binds the organization together, and 
-    minimizes discrepencies in an organization's reputation.
-
-    The effects may be non-inmediate, are indirect and different from person to person.
-    Over the long term however, commmunication shapes thinking.
-
-    </p>
+    <div class="content">
+        <h1>About</h1>
+              <br>
+      <h3>Oral Histories preserve your life's stories through recorded interviews.</h3>
+      <br>
+      <h3>Stories that can be left to your family and many generations after.</h3>
+    </div>
 
   </div>
 
 
   <div class="section" id="approach">
 
-    <p> Clients come to me with a specific or broad idea or a challenge related to communications inside an organization. Through conversations, 
-    we outline an idea to test, something which gets results easily and quickly, and 
-    plays to the clients strengths and resources. This approach is inspired by rapid prototyping, 
-    a method used to accelerate the innovation process in design and manufacturing.
-    <br>
-    <br>
-    From insights, and along with the clients intuition and experiences, we continue iterating, and build out the product and processes with the long term in mind. 
-    This can be a podcast, employee influencer or thought leadership.
-    I can provide strategic and content support, but my end goal is to help the client do it for themselves.
-
-    </p>
-
+    <div class="content">
+            <h1>Approach</h1>
+              <br>
+        <p> Clients and I have an initial converstion about their life.</p>
+        <p>I spend time looking at their public profile, their publications and researching the period of the time.</p>
+        <p>
+          We look at their photos albums, memorabilia and other items that hold value to them.
+        </p>    
+        <p>
+          We then spend between another 2-10 sessions recording their stories.
+        </p>
+        <p>
+          I then clean up the audio for a digital copy and transcribe the recordings into a hard copy.
+        </p>
+    </div>
   </div>
 
   <div class="section" id="getInTouch">
-    <p>
-    Most of the work I have done is not publically available. 
-    You can review my profile on <a href="https://www.linkedin.com/in/szewahleong/">  
-    LinkedIn</a>. Or, get in touch to learn more.
-
-      I was part of a corporate communications team that was at the heart of the biggest change in 
-      retail and supply chains in the last 20 years.
-
-    </p>
+    <div class="content">
+    <h2>Leave a legacy for your family and friends.</h2>
+              <br>
+      <p>
+      Please get in touch to start your oral history journey.
+      </p>
+      <br>
+      <Form method="post">
+        <input type="email" name="email" placeholder="Please enter a email address">
+        <input type="submit" name="submit" value="Send" id="myBtn">
+      </Form>
+    </div>
   </div>
 
 
 <script>
 
- 
   window.onscroll = function () {
     var body = document.body;
     var sections = document.querySelectorAll(".section");
@@ -82,7 +79,7 @@
       }
       currentSection = i;
     }
-                // Change the background color based on the current section
+      // Change the background color based on the current section
       var colorIndex = currentSection % colors.length;
       body.style.backgroundColor = colors[colorIndex];
 

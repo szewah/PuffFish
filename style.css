@@ -31,7 +31,32 @@ body {
     animation: moveBox 2s infinite alternate;
 }
 
+form {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+}
 
+input[type=email] {
+    padding: 10px;
+    height: 40px;
+    width: 80%;
+    margin: 0 auto;
+    font: 1em;
+  }
+
+input[type=submit] {
+    height: 40px;
+    font-size: 1rem;
+    color: white;
+    background-color: rgb(0, 132, 255);
+    border: none;
+    width: 50%;
+        font: 1em;
+    -webkit-border-radius:0px;
+        border-radius: 5px;
+    
+  }
 
 @keyframes moveBox {
     to {
@@ -47,12 +72,8 @@ body {
     align-items: center;
     justify-content: center;
     line-height: 1.5;
-}
-
-
-#introduction{
-    width: 100vw;
-    background-color: #add8e6;
+    width: 80%;
+    margin: auto
 }
 
 #header {
@@ -61,30 +82,12 @@ body {
     margin: auto;
 }
 
-#commmunications {
-    width: 100vw;
-    margin: auto;
+
+.content {
+    width: 60%;
+    margin: auto
 }
 
-#commmunications > p {
-    width: 80%;
-    margin: auto;
-}
-
-#approach > p{
-    margin: auto;
-    width: 80%;
-}
-
-#getInTouch > p {
-    margin: auto;
-    width: 80%;
-}
-
-
-#audio {
-    height: 2px;
-}
 
 a {
     text-decoration: none;
@@ -99,19 +102,12 @@ a {
 @media (max-width: 576px) {
     /* CSS rules for small devices */
 
-    #commmunications > p {
-        width: 75%;
+    body {
+        font-size: 20px;
     }
-
-    #approach > p{
-        width: 75%;
+    .content {
+        width: 95%;
     }
-    #getInTouch > p {
-        width: 75%;
-    }
-    
-
-
 
 }
 
@@ -121,18 +117,6 @@ a {
     body {
         font-size: 16px;
     }
-    #commmunications > p {
-        width: 80%;
-    }
-    #approach > p{
-        width: 80%;
-
-    }
-    #getInTouch > p {
-        width: 80%;
-
-    }
-
 
 }
 
@@ -141,19 +125,6 @@ a {
     /* CSS rules for large devices */
     body {
         font-size: 20px;
-    }
-
-    #commmunications > p {
-        width: 65%;
-    }
-
-    #approach > p{
-        width: 65%;
-
-    }
-    #getInTouch > p {
-        width: 65%;
-
     }
 
 }
@@ -165,15 +136,12 @@ a {
         font-size: 25px;
     }
 
-    #commmunications > p {
-        width: 50%;
-    }
-
+/* 
     #approach > p{
         width: 50%;
     }
     #getInTouch > p {
         width: 50%;
-    }
+    } */
 
 }
