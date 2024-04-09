@@ -27,11 +27,6 @@ ul {
   }
 
 
-form {
-    /* display: flex;
-    flex-direction: row;
-    align-items: left; */
-}
 
 input[type=email] {
     padding: 10px;
