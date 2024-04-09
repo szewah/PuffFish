@@ -94,86 +94,161 @@ a {
 
 /* Media queries for different device sizes */
 
-/* Small devices (up to 576px) */
-@media (max-width: 576px) {
-    /* CSS rules for small devices */
 
-    body {
-        /* font-size: 20px; */
+
+@media only screen and (min-width: 360px) {
+    /* h1 {
+      font-weight: 400;
+      font-size: 50px;
     }
-    .content {
-        width: 95%;
-    }
-    #form-center {
-        width: 90%;
-    }
-    input[type=email] {
-        width: 90%;
-    }
-    input[type=submit] {
-        width: 40%;
+    h2 {
+      font-size: 25px;
     }
     p {
         font-size: 20px;
+    } */
+    .content {
+        width: 100%;
     }
-    #form-center {
-        width: 90%;
-    }
+  }
 
-}
 
-/* Medium devices (between 576px and 768px) */
-@media (min-width: 576px) and (max-width: 768px) {
-    /* CSS rules for medium devices */
-    body {
-        /* font-size: 16px; */
-    }
-    #form-center {
-        width: 90%;
-    }
-    input[type=email] {
-        width: 80%;
-    }
+
+
+@media only screen and (min-width: 510px) {
     input[type=submit] {
         width: 30%;
     }
+    h1 {
+        font-size: 35px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 20px; 
+    }
+    .content{
+        width: 95%;
+    }
 
-}
+  }
 
-/* Large devices (between 768px and 992px) */
-@media (min-width: 768px) and (max-width: 992px) {
-    /* CSS rules for large devices */
-    body {
-        /* font-size: 20px; */
-    }
-    #form-center {
-        width: 80%;
-    }
-    input[type=email] {
-        width: 80%;
-    }
+
+
+@media only screen and (min-width: 610px){
     input[type=submit] {
         width: 30%;
     }
+    h1 {
+        font-size: 50px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    h3 {
+        font-size: 25px; 
+    }
 
-}
+    p {
+       font-size: 19px;
+    }
+    .content{
+        width: 90%;
+    }
+  }
 
-/* Extra large devices (above 992px) */
-@media (min-width: 992px) {
-    /* CSS rules for extra large devices */
-    body {
+@media only screen and (min-width: 768px) {
+    input[type=submit] {
+        width: 30%;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    h2 {
         font-size: 25px;
-        /* font-size: calc(18px + 0.390625vw); */
+    }
+    h3 {
+        font-size: 25px; 
     }
 
-    #form-center {
-        width: 70%;
+    p {
+       font-size: 19px;
     }
-    input[type=email] {
-        width: 70%;
+    .content{
+        width: 80%;
     }
+}
+
+@media  only screen and (min-width: 912px) {
+    /* CSS rules for medium devices */
     input[type=submit] {
         width: 30%;
     }
+    h1 {
+        font-size: 50px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    h3 {
+        font-size: 25px; 
+    }
 
+    p {
+       font-size: 19px;
+    }
+    .content{
+        width: 80%;
+    }
+
+}
+
+
+@media only screen and (min-width: 1006px) {
+    /* CSS rules for large devices */
+    input[type=submit] {
+        width: 30%;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    h2 {
+        font-size: 35px;
+    }
+    h3 {
+        font-size: 30px; 
+    }
+
+    p {
+       font-size: 25px;
+    }
+    .content{
+        width: 80%;
+    
+     
+}
+
+@media only screen and (min-width: 1021px) {
+
+    input[type=submit] {
+        width: 30%;
+    }
+    h1 {
+        font-size: 56px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    h3 {
+        font-size: 35px; 
+    }
+
+    p {
+       font-size: 25px;
+    }
+    .content{
+        width: 80%;
+    }
+    
 }
