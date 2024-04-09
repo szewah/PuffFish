@@ -158,8 +158,8 @@ a {
 @media (min-width: 992px) {
     /* CSS rules for extra large devices */
     body {
-        /* font-size: 25px; */
-        font-size: calc(18px + 0.390625vw);
+        font-size: 25px;
+        /* font-size: calc(18px + 0.390625vw); */
     }
 
     #form-center {
