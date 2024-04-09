@@ -3,28 +3,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Puff Fish Communications</title>
+<title>Puff Fish - Oral Histories</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-
   <div class="section" id="introduction">
-    <div id="header">
+    <div class="content">
       <h1>Puff Fish</h1>
-      <h3>Oral Histories for Family Legacy</h3>
+      <h3>Oral Histories for Family Legacies</h3>
     </div>
-
-</div>
+  </div>
 
   <div class="section" id="communications">
 
     <div class="content">
-        <h1>About</h1>
+        <!-- <h1>About</h1> -->
               <br>
-      <h3>Oral Histories preserve your life's stories through recorded interviews.</h3>
-      <br>
-      <h3>Stories that can be left to your family and many generations after.</h3>
+      <h2>An oral history preserve your life's story through recorded interviews.</h2>
+      <h2>A story that can be left to your family and many generations to come.</h2>
     </div>
 
   </div>
@@ -33,34 +30,39 @@
   <div class="section" id="approach">
 
     <div class="content">
-            <h1>Approach</h1>
+            <!-- <h1>Approach</h1> -->
               <br>
-        <p> Clients and I have an initial converstion about their life.</p>
-        <p>I spend time looking at their public profile, their publications and researching the period of the time.</p>
-        <p>
-          We look at their photos albums, memorabilia and other items that hold value to them.
-        </p>    
-        <p>
-          We then spend between another 2-10 sessions recording their stories.
-        </p>
-        <p>
-          I then clean up the audio for a digital copy and transcribe the recordings into a hard copy.
+              <h2>At the core of my approach is respect.</h2>
+
+        <p>The client and I have an initial converstion about their life.
+         I research their public profile, read their publications and research the period they were most active in.
+          Together, we look at photos albums, memorabilia and other items that hold value to them.</p>
+          <p>
+          We spend between 2-10 sessions, of varying length, recording their story.
+          The client receives a soft and hard copy of their story.
+          
         </p>
     </div>
   </div>
 
   <div class="section" id="getInTouch">
     <div class="content">
-    <h2>Leave a legacy for your family and friends.</h2>
-              <br>
-      <p>
-      Please get in touch to start your oral history journey.
-      </p>
-      <br>
+    <h2>Leave an oral history legacy.</h2>
+    <p>
+      Please get in touch if you have questions.
+    </p>
+    <div id="form-center">
       <Form method="post">
-        <input type="email" name="email" placeholder="Please enter a email address">
-        <input type="submit" name="submit" value="Send" id="myBtn">
+        <ul>
+          <li>
+            <input type="email" name="email" placeholder="Please enter a email address">
+          </li>
+          <li>
+            <input type="submit" name="submit" value="Send" id="myBtn">
+          </li>
+      </ul>
       </Form>
+    </div>
     </div>
   </div>
 
@@ -71,7 +73,7 @@
     var body = document.body;
     var sections = document.querySelectorAll(".section");
     var currentSection = 0;
-    var colors = ["#add8e6", "#f08080", "#1b8fac", "#7d0a60"];
+    var colors = ["#D1E8E2", "#19747E", "#A9D6E5", "#E2E2E2"];
    
     for (var i = 0; i < sections.length; i++) {
       if (sections[i].offsetTop > window.scrollY) {

@@ -2,56 +2,54 @@
 
 * {
     box-sizing: border-box;
-    margin: 0;
+    text-rendering: optimizeLegibility
 }
 
 html, body {
     height: 100%;
+    margin: 0;
+
 }
 
 body {
-    transition: background-color 0.5s ease;
+    transition: background-color 0.1s ease;
 }
 
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  form li + li {
+    margin-top: 1em;
+  
+  }
 
-.box {
-    width: 80vw;
-    height: 30%;
-    background-color: #3498db;
-    position: absolute;
-    animation: moveBox 2s infinite alternate;
-}
-
-
-.box2 {
-    width: 80vw;
-    height: 30%;
-    background-color: #db347c00;
-    bottom: 10px;
-    animation: moveBox 2s infinite alternate;
-}
 
 form {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
-    align-items: left;
+    align-items: left; */
 }
 
 input[type=email] {
     padding: 10px;
     height: 40px;
-    width: 80%;
-    margin: 0 auto;
-    font: 1em;
+    /* width: 100%; */
+    font: 2em;
+    border: none;
+    border-radius: 5px;
   }
+
 
 input[type=submit] {
     height: 40px;
     font-size: 1rem;
     color: white;
-    background-color: rgb(0, 132, 255);
+    background-color: #19747E;
     border: none;
-    width: 50%;
+    /* width: 50%; */
         font: 1em;
     -webkit-border-radius:0px;
         border-radius: 5px;
@@ -69,17 +67,11 @@ input[type=submit] {
 .section {
     height: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
     line-height: 1.5;
     width: 80%;
     margin: auto
-}
-
-#header {
-    padding-top: 100px;
-    width: 80%;
-    margin: auto;
 }
 
 
@@ -103,10 +95,25 @@ a {
     /* CSS rules for small devices */
 
     body {
-        font-size: 20px;
+        /* font-size: 20px; */
     }
     .content {
         width: 95%;
+    }
+    #form-center {
+        width: 90%;
+    }
+    input[type=email] {
+        width: 90%;
+    }
+    input[type=submit] {
+        width: 40%;
+    }
+    p {
+        font-size: 20px;
+    }
+    #form-center {
+        width: 90%;
     }
 
 }
@@ -115,7 +122,16 @@ a {
 @media (min-width: 576px) and (max-width: 768px) {
     /* CSS rules for medium devices */
     body {
-        font-size: 16px;
+        /* font-size: 16px; */
+    }
+    #form-center {
+        width: 90%;
+    }
+    input[type=email] {
+        width: 80%;
+    }
+    input[type=submit] {
+        width: 30%;
     }
 
 }
@@ -124,7 +140,16 @@ a {
 @media (min-width: 768px) and (max-width: 992px) {
     /* CSS rules for large devices */
     body {
-        font-size: 20px;
+        /* font-size: 20px; */
+    }
+    #form-center {
+        width: 80%;
+    }
+    input[type=email] {
+        width: 80%;
+    }
+    input[type=submit] {
+        width: 30%;
     }
 
 }
@@ -133,15 +158,18 @@ a {
 @media (min-width: 992px) {
     /* CSS rules for extra large devices */
     body {
-        font-size: 25px;
+        /* font-size: 25px; */
+        font-size: calc(18px + 0.390625vw);
     }
 
-/* 
-    #approach > p{
-        width: 50%;
+    #form-center {
+        width: 70%;
     }
-    #getInTouch > p {
-        width: 50%;
-    } */
+    input[type=email] {
+        width: 70%;
+    }
+    input[type=submit] {
+        width: 30%;
+    }
 
 }
